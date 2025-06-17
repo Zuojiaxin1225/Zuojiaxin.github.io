@@ -6,26 +6,45 @@
   <title>左嘉欣的个人简历</title>
   <style>
     body { font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f8f8f8; margin: 0; padding: 0; }
-    .container { max-width: 800px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.06); padding: 40px 32px; }
-    h1 { font-size: 2.6em; margin-bottom: 0.3em; }
+    .container { 
+      max-width: 800px; 
+      margin: 40px auto; 
+      background: #fff; 
+      border-radius: 12px; 
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06); 
+      padding: 40px 32px; 
+      position: relative; 
+      overflow: hidden;
+    }
+    .avatar-id { 
+      position: absolute; 
+      top: 32px; 
+      right: 32px; 
+      width: 120px; 
+      border-radius: 8px; 
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      object-fit: cover;
+      background: #eaf6ff;
+    }
+    h1 { font-size: 2.6em; margin-bottom: 0.3em; text-align: left; }
     h2 { color: #0072ef; margin-top: 1.7em; margin-bottom: 0.7em; }
     p, li { color: #444; font-size: 1.08em; }
     .info, .contact { margin-bottom: 1em; color: #555; font-size: 1.06em; }
     .label { color: #666; font-weight: bold; }
     ul { padding-left: 1.3em; }
     .links a { color: #0072ef; margin-right: 1.1em; text-decoration: none; }
-    .avatar { float: right; width: 96px; border-radius: 50%; margin-left: 28px; margin-bottom: 16px; }
     .paper-list { word-break: break-all; }
     .award-list li { margin-bottom: 0.4em; }
     @media (max-width: 600px) {
       .container { padding: 14px 4px; }
-      .avatar { float: none; display: block; margin: 0 auto 18px; }
+      .avatar-id { position: static; display: block; margin: 0 auto 12px auto; width: 60%; }
+      h1 { text-align: center; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="https://avatars.githubusercontent.com/u/Zuojiaxin1225?v=4" alt="头像" class="avatar">
+    <img src="b3744501b259e983c9b8055a60aae554.jpg" alt="" class="avatar-id">
     <h1>左嘉欣</h1>
     <div class="contact">
       <span class="label">联系方式：</span>18099641951 <br>
