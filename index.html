@@ -3,62 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>左嘉欣个人简历</title>
+  <title>左嘉欣的个人简历</title>
   <style>
     body { 
       font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; 
-      background: #f0f2f5; 
+      background: #f4f6f9; 
       margin: 0; 
       padding: 0; 
       line-height: 1.6;
     }
     .container { 
-      max-width: 900px; 
+      max-width: 950px; 
       margin: 40px auto; 
       background: #fff; 
       border-radius: 12px; 
-      box-shadow: 0 8px 30px rgba(0,0,0,0.1); 
-      padding: 50px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08); 
+      padding: 55px;
     }
-    /* 顶部布局重构：左侧文字介绍，右侧大尺寸照片 */
+    /* 顶部布局优化：照片高度对齐文字 */
     .header-section {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 30px;
-      gap: 30px;
+      align-items: stretch; /* 保持高度一致 */
+      margin-bottom: 35px;
+      gap: 40px;
     }
     .profile-text {
       flex: 1; 
-      max-width: 70%; /* 限制文字宽度，确保右侧空间 */
+      max-width: 65%; /* 限制文字宽度，给照片留空间 */
     }
     .avatar-id { 
-      width: 180px; /* 照片保持原比例放大 */
-      border-radius: 10px; 
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-      object-fit: cover;
-      border: 4px solid #fff;
+      height: auto;
+      max-height: 380px; /* 控制最大高度与左侧文字区域相近 */
+      border-radius: 12px; 
+      box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+      object-fit: contain; /* 保持原比例 */
+      background: #fff;
     }
-    h1 { font-size: 3em; margin: 0 0 15px 0; color: #333; }
+    h1 { font-size: 3.2em; margin: 0 0 15px 0; color: #1a1a1a; }
     h2 { 
       color: #0056b3; 
-      margin-top: 1.5em; 
-      margin-bottom: 0.8em; 
-      border-left: 5px solid #0056b3;
+      margin-top: 1.6em; 
+      margin-bottom: 0.9em; 
+      border-left: 6px solid #0056b3;
       padding-left: 15px;
-      font-size: 1.5em;
+      font-size: 1.6em;
+      background: #f8fbff;
     }
-    .contact-info { margin-bottom: 20px; color: #555; font-size: 1.05em; }
+    .contact-info { margin-bottom: 25px; color: #444; font-size: 1.1em; }
     .label { font-weight: bold; color: #2c3e50; }
-    p, li { color: #444; font-size: 1.08em; margin-bottom: 8px; }
-    ul { padding-left: 20px; }
-    .paper-item { margin-bottom: 15px; list-style-type: disc; }
-    .highlight { color: #0056b3; font-weight: bold; }
+    p, li { color: #333; font-size: 1.1em; margin-bottom: 10px; }
+    ul { padding-left: 22px; }
+    .paper-item { margin-bottom: 18px; list-style-type: circle; }
+    .highlight { color: #d35400; font-weight: bold; }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .header-section { flex-direction: column-reverse; align-items: center; }
-      .profile-text { max-width: 100%; text-align: center; }
-      .avatar-id { width: 60%; margin-bottom: 20px; }
+      .profile-text { max-width: 100%; text-align: left; }
+      .avatar-id { width: 70%; max-height: none; margin-bottom: 25px; }
     }
   </style>
 </head>
@@ -75,7 +77,7 @@
         </div>
         <p>
           左嘉欣（2000-），女，<b>中共党员</b>。新疆大学2024级语言学及应用语言学博士研究生（硕博连读），博士班综合排名 <b>2/16</b>。<br><br>
-          研究方向聚焦于<b>现代维吾尔语依存句法研究与依存树库建设</b>、计算语言学及少数民族语言信息处理。具备扎实的科研素质与优秀的跨学科研究潜力。
+          研究方向聚焦于<b>现代维吾尔语依存句法研究与依存树库建设</b>、计算语言学及少数民族语言信息处理。具备扎实的科研素质、丰富的田野实践经验与优秀的跨学科研究潜力。
         </p>
       </div>
       <img src="IMG_7850.JPG" alt="左嘉欣" class="avatar-id">
@@ -90,7 +92,9 @@
 
     <h2>参与科研项目</h2>
     <ul>
-      <li><span class="highlight">项目负责人：</span> 自治区研究生科研创新项目（重点关注维语依存语法研究）</li>
+      <li><span class="highlight">项目负责人：</span> 自治区研究生科研创新项目：<b>现代维吾尔语依存句法研究与依存树库建设</b></li>
+      <li>自治区社会科学基金项目：新疆少数民族优秀文化创造性转化与创新性发展研究 (2025BYY142)</li>
+      <li>自治区研究生科研创新项目：基于语料库的唐诗维吾尔语翻译研究</li>
       <li>数智时代自治区研究生精品示范课程《维吾尔语高级听力》知识图谱构建与应用 (XJDX2025YJG18)</li>
       <li>认知语言学视域下唐诗的维译研究 (2024ZHSGYJY-YBO4)</li>
       <li>新文科背景下自治区级一流本科课程知识图谱构建与应用研究 (XWKJG202415)</li>
@@ -100,7 +104,7 @@
     <h2>发表论文</h2>
     <ul>
       <li class="paper-item">
-        <b>Jiaxin Zuo</b>, Yiquan Wang, Xiadiya Yibulayin. Relative-to-human Benchmark Cognitive Divergence and Semantic Comprehensibility in Chinese–Uyghur LLM Translation[J]. <b>Frontiers in Psychology (SSCI Q1)</b>. (Accepted, Expected 2026)
+        <b>Jiaxin Zuo</b>, Yiquan Wang, Xiadiya Yibulayin. Relative-to-human Benchmark Cognitive Divergence and Semantic Comprehensibility in Chinese–Uyghur LLM Translation[J]. <b>Frontiers in Psychology (SSCI Q1)</b>. (Accepted, 2026)
       </li>
       <li class="paper-item">
         <b>Jiaxin Zuo</b>, Yiquan Wang, Yuan Pan, Xiadiya Yibulayin. Construction and educational application of a linguistically grounded dependency treebank for Uyghur[J]. <b>Humanities and Social Sciences Communications (Nature Portfolio)</b>. (Under Review)
@@ -109,29 +113,26 @@
         <b>左嘉欣</b>, 夏迪娅·伊布拉音. 我国国家通用语言文字教育研究热点及发展脉络（2014—2024）——基于CiteSpace的知识图谱分析[J]. 江西电力职业技术学院学报, 2026.06. (录用待刊)
       </li>
       <li class="paper-item">
-        左嘉欣, 夏迪娅·伊布拉音. 量化分析视角下知识图谱在课程中的建设与应用[J]. 数字技术与应用, 2025.07.
+        <b>左嘉欣</b>, 夏迪娅·伊布拉音. 量化分析视角下知识图谱在课程中的建设与应用[J]. 数字技术与应用, 2025.07.
       </li>
       <li class="paper-item">
-        左嘉欣, 李圃. 维吾尔语专业学生语言实习现状调查与有效途径探索[J]. 教育进展, 2023, 13(12).
+        <b>左嘉欣</b>, 李圃. 维吾尔语专业学生语言实习现状调查与有效途径探索[J]. 教育进展, 2023, 13(12).
       </li>
     </ul>
 
     <h2>获奖情况（时间倒序）</h2>
     <ul>
+      <li><b>2021——2025：</b> 连续5年获得国家级、自治区级各类奖学金</li>
+      <li><b>2025.08.06：</b> 获评第三届语料库与数字人文暑期学院“优秀学员”</li>
       <li><b>2024.11.27：</b> 获评新疆大学中国语言文学学院“博士生党支部学习标兵”</li>
-      <li><b>2024.11.06：</b> 新疆大学2024至2025学年研究生自治区学业奖学金</li>
       <li><b>2024.06.24：</b> 喀什地区叶城县第六中学“优秀实习教师”</li>
-      <li><b>2023.10.06：</b> 新疆维吾尔自治区教育厅2023至2024学年自治区奖学金</li>
-      <li><b>2022.12.01：</b> 新疆大学2022至2023学年研究生自治区学业奖学金</li>
-      <li><b>2022.06.02：</b> 学院维吾尔语专业口语技能竞赛“火箭组”三等奖</li>
-      <li><b>2021.12.20：</b> 2020至2021学年新疆维吾尔自治区教育厅国家励志奖学金</li>
-      <li><b>2021.06.00：</b> 喀什地区叶城县巴仁乡库勒艾日克村“优秀实习生”</li>
+      <li><b>2021.06.25：</b> 喀什地区叶城县巴仁乡库勒艾日克村“优秀实习生”</li>
     </ul>
 
     <h2>实习经历</h2>
     <ul>
-      <li><b>2023.09 - 2024.06：</b> 喀什地区叶城县第六中学担任英语教师</li>
-      <li><b>2020.09 - 2021.09：</b> 喀什地区叶城县巴仁乡库勒艾日克村参与驻村实习，负责入户走访、疫情防控等工作</li>
+      <li><b>2023.09 - 2024.06：</b> 喀什地区叶城县第六中学支教，担任英语教师</li>
+      <li><b>2020.09 - 2021.09：</b> 喀什地区叶城县巴仁乡库勒艾日克村参与驻村实习</li>
     </ul>
   </div>
 </body>
