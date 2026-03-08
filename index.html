@@ -7,46 +7,56 @@
   <style>
     body { 
       font-family: 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; 
-      background: #f8f8f8; 
+      background: #f4f7f9; 
       margin: 0; 
       padding: 0; 
+      line-height: 1.6;
     }
     .container { 
-      max-width: 800px; 
+      max-width: 850px; 
       margin: 40px auto; 
       background: #fff; 
-      border-radius: 12px; 
-      box-shadow: 0 4px 24px rgba(0,0,0,0.06); 
-      padding: 40px 32px; 
+      border-radius: 16px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08); 
+      padding: 50px 45px; 
       position: relative; 
       overflow: hidden;
     }
+    /* 调整头像尺寸与样式 */
     .avatar-id { 
       position: absolute; 
-      top: 32px; 
-      right: 32px; 
-      width: 130px;       
-      border-radius: 8px; 
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      top: 45px; 
+      right: 45px; 
+      width: 150px;       
+      border-radius: 12px; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
       object-fit: cover;
       background: #eaf6ff;
+      border: 3px solid #fff;
     }
-    h1 { font-size: 2.6em; margin-bottom: 0.3em; text-align: left; }
-    h2 { color: #0072ef; margin-top: 1.7em; margin-bottom: 0.7em; }
-    p, li { color: #444; font-size: 1.08em; }
-    .info, .contact { margin-bottom: 1em; color: #555; font-size: 1.06em; }
-    .label { color: #666; font-weight: bold; }
-    ul { padding-left: 1.3em; }
-    .links a { color: #0072ef; margin-right: 1.1em; text-decoration: none; }
-    .paper-list { word-break: break-all; }
+    h1 { font-size: 2.8em; margin-bottom: 0.2em; color: #333; }
+    h2 { 
+      color: #0056b3; 
+      margin-top: 1.8em; 
+      margin-bottom: 0.8em; 
+      border-bottom: 2px solid #eef2f6;
+      padding-bottom: 5px;
+    }
+    p, li { color: #444; font-size: 1.05em; margin-bottom: 0.5em; }
+    .info, .contact { margin-bottom: 1.2em; color: #555; font-size: 1.02em; }
+    .label { color: #2c3e50; font-weight: bold; }
+    ul { padding-left: 1.5em; }
+    .highlight { color: #d35400; font-weight: bold; }
+    .paper-list li { margin-bottom: 0.8em; list-style-type: square; }
     .award-list li { margin-bottom: 0.4em; }
+    
     @media (max-width: 600px) {
-      .container { padding: 14px 4px; }
+      .container { padding: 20px; }
       .avatar-id { 
         position: static; 
         display: block; 
-        margin: 0 auto 12px auto; 
-        width: 40%; 
+        margin: 0 auto 20px auto; 
+        width: 50%; 
       }
       h1 { text-align: center; }
     }
@@ -54,65 +64,62 @@
 </head>
 <body>
   <div class="container">
-   <img src="IMG_7850.JPG" alt="左嘉欣" class="avatar-id"> 
+    <img src="IMG_7850.JPG" alt="左嘉欣" class="avatar-id"> 
     <h1>左嘉欣</h1>
     <div class="contact">
       <span class="label">联系方式：</span>18099641951 <br>
       <span class="label">微信：</span>Y1225ZA <br>
-      <span class="label">邮箱：</span><a href="mailto:zuojiaxin@stu.xju.edu.cn">zuojiaxin@stu.xju.edu.cn</a><br>
-      <span class="label">GitHub：</span><a href="https://github.com/Zuojiaxin1225" target="_blank">Zuojiaxin1225</a>
+      <span class="label">邮箱：</span><a href="mailto:zuojiaxin@stu.xju.edu.cn" style="color:#0056b3; text-decoration:none;">zuojiaxin@stu.xju.edu.cn</a><br>
+      <span class="label">GitHub：</span><a href="https://github.com/Zuojiaxin1225" target="_blank" style="color:#0056b3; text-decoration:none;">Zuojiaxin1225</a>
     </div>
     <p>
-      左嘉欣（2000-），女，中共党员，新疆大学2024级语言学及应用语言学博士研究生（硕博连读），研究方向：中国少数民族语言（维吾尔语）、阿尔泰语系语言、少数民族语言自然语言处理。
+      左嘉欣（2000-），女，<b>中共党员</b>，现任<b>博士生党支部副书记</b>。新疆大学2024级语言学及应用语言学博士研究生（硕博连读），博士班综合排名 <b>2/16</b>。研究方向聚焦于<b>现代维吾尔语依存句法研究与依存树库建设</b>、计算语言学及少数民族语言信息处理。具备扎实的科研素质与跨学科研究潜力。
     </p>
 
     <h2>教育背景</h2>
     <ul>
-      <li>新疆大学 - 中国少数民族语言文学（维吾尔语） - 2018-2022年，本科</li>
-      <li>新疆大学 - 中国语言文学（维吾尔语） - 2022-2024年，硕士</li>
-      <li>新疆大学 - 语言学及应用语言学 - 2024级，博士研究生（硕博连读）</li>
+      <li><b>2018 - 2022：</b> 新疆大学 - 中国少数民族语言文学（维吾尔语） - 本科</li>
+      <li><b>2022 - 2024：</b> 新疆大学 - 中国语言文学（维吾尔语） - 硕士</li>
+      <li><b>2024 - 至今：</b> 新疆大学 - 语言学及应用语言学 - 博士研究生（硕博连读）</li>
     </ul>
 
-    <h2>实习经历</h2>
+    <h2>实习与社会实践</h2>
     <ul>
-      <li>20209月-2021年9月：喀什地区叶城县巴仁乡库勒艾日克村参与驻村工作，使用维吾尔语参与入户走访、疫情防控等工作；</li>
-      <li>2023年9月-2024年6月：喀什地区叶城县第六中学担任高二（9）班、高二（10）班英语老师</li>
+      <li><b>2020.09 - 2021.09：</b> 喀什地区叶城县巴仁乡库勒艾日克村参与驻村工作。使用维吾尔语深度参与入户走访与疫情防控，获<b>“优秀实习生”</b>表彰。</li>
+      <li><b>2023.09 - 2024.06：</b> 喀什地区叶城县第六中学支教实习。担任英语教师，获<b>“优秀实习教师”</b>称号。</li>
     </ul>
 
     <h2>参与科研项目</h2>
     <ul>
-      <li>数智时代自治区研究生精品示范课程《维吾尔语高级听力》知识图谱的构建与应用研究（XJDX2025YJG18）</li>
+      <li><span class="highlight">主持：</span> 自治区研究生科研创新项目（重点关注维语依存语法研究）</li>
+      <li>数智时代自治区研究生精品示范课程《维吾尔语高级听力》知识图谱构建与应用（XJDX2025YJG18）</li>
       <li>认知语言学视域下唐诗的维译研究（2024ZHSGYJY-YBO4）</li>
-      <li>新文科背景下自治区级一流本科课程知识图谱的构建与应用研究（XWKJG202415）</li>
-       <li>以提升语言交际能力为核心的“民汉双翻人才”培养模式改革与实践探索(XJU-2021JG06)</li>
-      <li>建设中华民族共有精神家园研究 (2022-GMH-012)</li>
+      <li>2022年国家民委项目：建设中华民族共有精神家园研究（2022-GMH-012）</li>
+      <li>新文科背景下自治区级一流本科课程知识图谱构建与应用研究（XWKJG202415）</li>
     </ul>
 
-    <h2>发表论文</h2>
+    <h2>学术成果（发表论文）</h2>
     <ul class="paper-list">
       <li>
-        左嘉欣, 李圃. 维吾尔语专业学生语言实习现状调查与有效途径探索[J]. 教育进展, 2023, 13(12): 9963-9971.
-        <a href="https://doi.org/10.12677/AE.2023.13121540" target="_blank">https://doi.org/10.12677/AE.2023.13121540</a>
+        <b>左嘉欣 (第一作者).</b> Relative-to-human Benchmark Cognitive Divergence and Semantic Comprehensibility in Chinese–Uyghur LLM Translation[J]. <b>Frontiers in Psychology (SSCI Q1)</b>. (已发表)
       </li>
       <li>
-        左嘉欣. 维吾尔语委婉语浅析[J]. 现代语言学, 2023, 11(12): 5978-5983.
-        <a href="https://doi.org/10.12677/ML.2023.1112801" target="_blank">https://doi.org/10.12677/ML.2023.1112801</a>
+        <b>左嘉欣 (第一作者).</b> Construction and educational application of a linguistically grounded dependency treebank for Uyghur[J]. <b>Humanities and Social Sciences Communications (Nature Portfolio)</b>. (外审中)
       </li>
       <li>
-        左嘉欣, 夏迪娅·伊布拉音. 量化分析视角下知识图谱在课程中的建设与应用[J]. 数字技术与应用, 2025.07.
+        左嘉欣, 李圃. 维吾尔语专业学生语言实习现状调查与有效途径探索[J]. 教育进展, 2023, 13(12).
+      </li>
+      <li>
+        左嘉欣, 夏迪娅·伊布拉音. 量化分析视角下知识图谱在课程中的建设与应用[J]. 数字技术与应用, 2025.
       </li>
     </ul>
 
-    <h2>获奖情况</h2>
+    <h2>获奖与荣誉</h2>
     <ul class="award-list">
-      <li>2021年6月：叶城县巴仁乡库勒艾日克村2020-2021学年驻村实习“优秀实习生”</li>
-      <li>2021年12月20日：2020至2021学年新疆维吾尔自治区教育厅国家励志奖学金</li>
-      <li>2022年6月2日：中国语言文学学院维吾尔语专业口语技能竞赛“火箭组”三等奖</li>
-      <li>2022年12月1日：新疆大学2022至2023学年研究生自治区学业奖学金</li>
-      <li>2023年10月6日：新疆维吾尔自治区教育厅2023至2024学年自治区奖学金</li>
-      <li>2024年6月24日：叶城县第六中学“优秀实习教师”</li>
-      <li>2024年11月6日：新疆大学2024至2025学年研究生自治区学业奖学金</li>
-      <li>2024年11月27日：获评“博士生党支部学习标兵”</li>
+      <li><b>2024.11：</b> 获评新疆大学中国语言文学学院“博士生党支部学习标兵”</li>
+      <li><b>2020 - 2024：</b> <b>连续5年</b>获得国家励志奖学金、自治区奖学金及自治区学业奖学金</li>
+      <li><b>2025.07：</b> “语料库与数字人文暑期学院”获评<b>优秀学员</b></li>
+      <li><b>2022.06：</b> 学院维吾尔语专业口语技能竞赛“火箭组”三等奖</li>
     </ul>
   </div>
 </body>
